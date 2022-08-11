@@ -3,7 +3,9 @@ filename="$1"
 while read -r line
 do
    URLS="$line"
-   IP='10.109.1.1'
+   #IP=$(printf "%d.%d.%d.%d\n" "$((RANDOM % 256 ))")
+   IP=$(printf "%d.%d.%d.%d\n" "$((RANDOM % 256 ))" "$((RANDOM % 256 ))" "$((RANDOM % 256 ))" "$((RANDOM % 256 ))")
+   #IP='10.109.1.1'
    today_date=`date +%d/%b/%Y`
    conact_1=" - - ["
    concat_2=":00:00:00 +0000] "
