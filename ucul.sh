@@ -1,6 +1,6 @@
 #!/bin/bash
 LC_CTYPE=C
-MAC=00-60-2F
+MAC=65-60-2F
 for i in {1..3}
 do
     IFS= read -d '' -r -n 1 char < /dev/urandom
